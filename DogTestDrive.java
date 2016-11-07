@@ -12,9 +12,8 @@ class DogTestDrive {
 		pack.makeArray(sizeArray.length);
 
 		for (int i = 0; i < sizeArray.length; i++) {
-			int newSize = sizeArray[i];
 			Dog newDog = new Dog();
-			newDog.setSize(newSize);
+			newDog.setSize(sizeArray[i]);
 			pack.addDog(i, newDog);
 			// System.out.println(pack.getArray()[i]);
 		}
