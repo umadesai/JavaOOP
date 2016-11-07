@@ -12,8 +12,8 @@ class DogTestDrive {
 		pack.makeArray(sizeArray.length);
 
 		for (int i = 0; i < sizeArray.length; i++) {
-			Dog newDog = new Dog();
 			int newSize = sizeArray[i];
+			Dog newDog = new Dog();
 			newDog.setSize(newSize);
 			pack.addDog(i, newDog);
 			// System.out.println(pack.getArray()[i]);
@@ -108,9 +108,8 @@ class DogPack {
 	public Dog biggestDog() {
 		Dog biggest = new Dog();
 		for (int i = 0; i < dogs.length; i++) {
-			Dog aDog = dogs[i];
-			if (aDog.isBigger(biggest)) {
-				biggest = aDog;
+			if (dogs[i].isBigger(biggest)) {
+				biggest = dogs[i];
 			}
 		}
 		return biggest;
