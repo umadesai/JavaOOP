@@ -10,8 +10,8 @@ public class DogPack {
 	/**
 	 * Takes an integer size and initializes dogs to an array of Dogs with the given size.
 	 */
-	public void makeArray () {
-		dogs = new ArrayList<Dog>();
+	public void makeArray (int size) {
+		dogs = new ArrayList<Dog>(size);
 	}
 	/**
 	 * Takes an integer index and a Dog and assigns the Dog to the Dog array at the given index.
@@ -23,8 +23,8 @@ public class DogPack {
 	 * Returns the biggest dog in the pack.
 	 */
 	public Dog biggestDog() {
-		Dog biggest = dogs.get(0);
-		for (int i = 1; i < dogs.size(); i++) {
+		Dog biggest = null;
+		for (int i = 0; i < dogs.size(); i++) {
 			Dog aDog = dogs.get(i);
 			if (aDog.isBigger(biggest)) {
 				biggest =  dogs.get(i);

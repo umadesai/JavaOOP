@@ -10,8 +10,8 @@ public class DogPack {
 	/**
 	 * Takes an integer size and initializes dogs to an array of Dogs with the given size.
 	 */
-	public void makeArray () {
-		dogs = new ArrayList<Dog>();
+	public void makeArray (int size) {
+		dogs = new ArrayList<Dog>(size);
 	}
 	/**
 	 * Takes an integer index and a Dog and assigns the Dog to the Dog array at the given index.

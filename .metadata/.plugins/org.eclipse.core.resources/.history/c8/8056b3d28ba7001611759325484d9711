@@ -9,7 +9,7 @@ public class DogTestDrive {
 
 		int[] sizeArray = {12, 11, 7};
 		DogPack pack = new DogPack();
-		pack.makeArray();
+		pack.makeArray(sizeArray.length);
 
 		for (int i = 0; i < sizeArray.length; i++) {
 			Dog newDog = new Dog();
