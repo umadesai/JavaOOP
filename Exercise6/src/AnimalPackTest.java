@@ -2,7 +2,7 @@
  * @author Uma Desai
  * AnimalTest creates an array of integer sizes and an AnimalPack, populates it
  * with one Animal for each size in the array, returns the biggest animal, and 
- * executes the makeNoise on each animal in the pack.
+ * executes the makeNoise method on each animal in the pack.
  */
 public class AnimalPackTest {
 
